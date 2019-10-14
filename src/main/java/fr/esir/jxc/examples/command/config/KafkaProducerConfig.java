@@ -1,4 +1,4 @@
-package fr.esir.jxc.examples.config;
+package fr.esir.jxc.examples.command.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -12,7 +12,7 @@ import org.springframework.kafka.core.DefaultKafkaProducerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.core.ProducerFactory;
 
-import fr.esir.jxc.examples.models.events.Event;
+import fr.esir.jxc.examples.common.events.Event;
 import org.springframework.kafka.support.serializer.JsonSerializer;
 
 @Configuration

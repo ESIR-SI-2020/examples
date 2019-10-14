@@ -1,6 +1,6 @@
-package fr.esir.jxc.examples.models;
+package fr.esir.jxc.examples.command.models;
 
-import fr.esir.jxc.examples.exception.InvalidParameterException;
+import fr.esir.jxc.examples.common.exception.InvalidParameterException;
 
 public final class Users {
 

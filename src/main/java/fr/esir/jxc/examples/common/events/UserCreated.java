@@ -1,9 +1,9 @@
-package fr.esir.jxc.examples.models.events;
+package fr.esir.jxc.examples.common.events;
 
 import java.util.UUID;
 
-import fr.esir.jxc.examples.models.CreateUserRequest;
-import fr.esir.jxc.examples.services.Security;
+import fr.esir.jxc.examples.command.models.CreateUserRequest;
+import fr.esir.jxc.examples.common.services.Security;
 import lombok.Value;
 
 @Value

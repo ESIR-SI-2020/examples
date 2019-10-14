@@ -1,4 +1,4 @@
-package fr.esir.jxc.examples.services;
+package fr.esir.jxc.examples.command.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -6,8 +6,8 @@ import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Service;
 import org.springframework.util.concurrent.ListenableFuture;
 
-import fr.esir.jxc.examples.models.events.Event;
-import fr.esir.jxc.examples.config.KafkaTopicConfig;
+import fr.esir.jxc.examples.common.events.Event;
+import fr.esir.jxc.examples.command.config.KafkaTopicConfig;
 import org.springframework.util.concurrent.SettableListenableFuture;
 
 @Service

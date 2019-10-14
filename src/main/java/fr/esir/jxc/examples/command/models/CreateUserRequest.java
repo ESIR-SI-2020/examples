@@ -1,4 +1,4 @@
-package fr.esir.jxc.examples.models;
+package fr.esir.jxc.examples.command.models;
 
 import lombok.Value;
 

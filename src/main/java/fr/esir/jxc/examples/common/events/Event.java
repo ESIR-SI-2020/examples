@@ -1,9 +1,9 @@
-package fr.esir.jxc.examples.models.events;
+package fr.esir.jxc.examples.common.events;
 
 import java.util.Optional;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import fr.esir.jxc.examples.utils.Json;
+import fr.esir.jxc.examples.common.utils.Json;
 import lombok.Value;
 
 @Value

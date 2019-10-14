@@ -1,4 +1,4 @@
-package fr.esir.jxc.examples.services;
+package fr.esir.jxc.examples.common.services;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

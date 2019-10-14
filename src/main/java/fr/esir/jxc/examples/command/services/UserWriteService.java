@@ -1,7 +1,7 @@
-package fr.esir.jxc.examples.services;
+package fr.esir.jxc.examples.command.services;
 
-import fr.esir.jxc.examples.models.CreateUserRequest;
-import fr.esir.jxc.examples.models.events.UserCreated;
+import fr.esir.jxc.examples.command.models.CreateUserRequest;
+import fr.esir.jxc.examples.common.events.UserCreated;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package fr.esir.jxc.examples.config;
+package fr.esir.jxc.examples.command.config;
 
 import java.util.HashMap;
 import java.util.Map;

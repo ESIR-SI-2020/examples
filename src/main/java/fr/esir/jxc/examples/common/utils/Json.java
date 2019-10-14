@@ -1,4 +1,4 @@
-package fr.esir.jxc.examples.utils;
+package fr.esir.jxc.examples.common.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

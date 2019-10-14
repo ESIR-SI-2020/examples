@@ -1,6 +1,6 @@
-package fr.esir.jxc.examples.config;
+package fr.esir.jxc.examples.common.config;
 
-import fr.esir.jxc.examples.exception.InvalidParameterException;
+import fr.esir.jxc.examples.common.exception.InvalidParameterException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
