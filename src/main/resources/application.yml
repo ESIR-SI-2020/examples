@@ -1,3 +1,17 @@
 kafka:
   topic: test
   bootstrapAddress: localhost:9092
+  groupId: fr.esir.jxc
+
+server:
+  port: 8099
+
+readApi:
+  port: 8080
+
+writeApi:
+  port: 8081
+
+userEventsHandler:
+  port: 8082
+

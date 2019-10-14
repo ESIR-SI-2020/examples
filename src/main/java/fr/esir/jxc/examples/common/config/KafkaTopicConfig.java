@@ -1,4 +1,4 @@
-package fr.esir.jxc.examples.command.config;
+package fr.esir.jxc.examples.common.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,15 +14,18 @@ import org.springframework.kafka.core.KafkaAdmin;
 public class KafkaTopicConfig {
 
   @Value(value = "${kafka.bootstrapAddress}")
-  private String bootstrapAddress;
+  public String BOOTSTRAP_ADDRESS;
 
   @Value(value = "${kafka.topic}")
   public String TOPIC;
 
+  @Value(value = "${kafka.groupId}")
+  public String GROUP_ID;
+
   @Bean
   public KafkaAdmin kafkaAdmin() {
     Map<String, Object> configs = new HashMap<>();
-    configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapAddress);
+    configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_ADDRESS);
     return new KafkaAdmin(configs);
   }
 

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.concurrent.ListenableFuture;
 
 import fr.esir.jxc.examples.common.events.Event;
-import fr.esir.jxc.examples.command.config.KafkaTopicConfig;
+import fr.esir.jxc.examples.common.config.KafkaTopicConfig;
 import org.springframework.util.concurrent.SettableListenableFuture;
 
 @Service
