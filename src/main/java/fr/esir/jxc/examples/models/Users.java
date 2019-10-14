@@ -4,7 +4,7 @@ import fr.esir.jxc.examples.exception.InvalidParameterException;
 
 public final class Users {
 
-  public static void validateUserCreationRequest(User user) {
+  public static void validateUserCreationRequest(CreateUserRequest user) {
     if (user.getUsername() == null
       || user.getEmail() == null
       || user.getPassword() == null
