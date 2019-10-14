@@ -15,3 +15,9 @@ writeApi:
 userEventsHandler:
   port: 8082
 
+elasticsearch:
+  home: /usr/local/opt/elasticsearch@5.6
+  cluster:
+    host: 127.0.0.1
+    port: 9300
+    name: jxc-cluster

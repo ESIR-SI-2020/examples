@@ -13,6 +13,8 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
         <jackson.version>2.10.0</jackson.version>
+        <spring-elasticsearch.version>3.0.14.RELEASE</spring-elasticsearch.version>
+        <elasticsearch.version>5.6.16</elasticsearch.version>
     </properties>
 
     <parent>
@@ -33,7 +35,7 @@
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-elasticsearch</artifactId>
-            <version>3.0.8.RELEASE</version>
+            <version>${spring-elasticsearch.version}</version>
         </dependency>
 
         <dependency>
@@ -66,6 +68,20 @@
             <artifactId>lombok</artifactId>
             <version>1.18.10</version>
             <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>${elasticsearch.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>transport</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.elasticsearch.plugin</groupId>
+            <artifactId>transport-netty4-client</artifactId>
         </dependency>
 
     </dependencies>
