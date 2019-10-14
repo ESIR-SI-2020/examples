@@ -2,8 +2,10 @@ package fr.esir.jxc.examples.query.controllers;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,20 +26,16 @@ public class UserController {
   }
 
   @GetMapping
-  public List<User.UserPublicRepresentation> listUsers(@RequestParam(defaultValue="20") Integer size, @RequestParam(defaultValue="1") Integer page) {
+  public List<User.UserPublicRepresentation> listUsers(@RequestParam(defaultValue="20") Integer size, @RequestParam(defaultValue="0") Integer page) {
     // Validate input data
     if (size < 0 || page < 0) {
       throw new InvalidParameterException();
     }
 
-    return this.userReadService.all().stream()
+    final Iterable<User> users = this.userReadService.findAll(PageRequest.of(page, size));
+    return StreamSupport.stream(users.spliterator(), false)
       .map(User::toPublicRepresentation)
       .collect(Collectors.toList());
-    /*final Iterable<User> users = this.userReadService.findAll(
-      PageRequest.of(Optional.ofNullable(page).orElse(1), Optional.ofNullable(size).orElse(20))
-    );
-    return StreamSupport.stream(users.spliterator(), false)
-      .collect(Collectors.toList());*/
   }
 
 
